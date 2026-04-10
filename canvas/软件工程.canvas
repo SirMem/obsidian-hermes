@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{
+			"id":"0e2c301edc2dbd9f",
+			"type":"text",
+			"text":"[[TDD：AI时代的软件工程契约]]",
+			"styleAttributes":{},
+			"x":200,
+			"y":-120,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"b617c4bde530955a",
+			"type":"text",
+			"text":"硬编码",
+			"styleAttributes":{},
+			"x":120,
+			"y":-320,
+			"width":260,
+			"height":60
+		}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{
+			"tags":["software-engineering","canvas"]
+		}
+	}
+}

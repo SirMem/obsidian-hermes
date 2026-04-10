@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{
+			"id":"7414853f1338c34b",
+			"type":"text",
+			"text":":class 是什么？\n: 是 v-bind: 的缩写，\n:class=\"...\" 表示 class 不是写死字符串，而是由 JS 表达式计算出来。",
+			"styleAttributes":{},
+			"x":-20,
+			"y":-140,
+			"width":260,
+			"height":260
+		}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{
+			"tags":["canvas","vue"]
+		}
+	}
+}
