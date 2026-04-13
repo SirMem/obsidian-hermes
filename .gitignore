@@ -1,0 +1,9 @@
+# Ignore hidden folders at repo root
+.*/
+
+# Ignore hidden files at repo root, but keep .gitignore itself
+.*
+!.gitignore
+
+# Ignore Graphify generated artifacts
+graphify-out/

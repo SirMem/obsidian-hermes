@@ -91,6 +91,16 @@
 			"height":100
 		},
 		{
+			"id":"se-git-stash",
+			"type":"text",
+			"text":"[[Git Stash.canvas]]\nGit stash 专题图谱",
+			"styleAttributes":{},
+			"x":-1160,
+			"y":120,
+			"width":260,
+			"height":100
+		},
+		{
 			"id":"se-tdd",
 			"type":"text",
 			"text":"[[TDD：AI时代的软件工程契约]]\n关键工程契约笔记",
@@ -230,9 +240,10 @@
 		{"id":"edge-hub-other","fromNode":"hub-center","fromSide":"bottom","toNode":"domain-other","toSide":"top"},
 		{"id":"edge-se-softeng","fromNode":"domain-se","fromSide":"left","toNode":"se-softeng","toSide":"right"},
 		{"id":"edge-se-git","fromNode":"domain-se","fromSide":"bottom","toNode":"se-git","toSide":"top"},
+		{"id":"edge-se-git-stash","fromNode":"se-git","fromSide":"left","toNode":"se-git-stash","toSide":"right"},
 		{"id":"edge-se-tdd","fromNode":"domain-se","fromSide":"bottom","toNode":"se-tdd","toSide":"top"},
 		{"id":"edge-ai-agentops","fromNode":"domain-ai","fromSide":"top","toNode":"ai-agentops","toSide":"bottom"},
-		{"id":"edge-ai-agent","fromNode":"domain-ai","fromSide":"right","toNode":"ai-agent","toSide":"left"},
+		{"id":"edge-ai-agent","fromFloating":false,"fromNode":"domain-ai","fromSide":"right","toNode":"ai-agent","toSide":"left"},
 		{"id":"edge-ai-prompt","fromNode":"domain-ai","fromSide":"top","toNode":"ai-prompt","toSide":"bottom"},
 		{"id":"edge-fe-vue","fromNode":"domain-frontend","fromSide":"right","toNode":"fe-vue","toSide":"left"},
 		{"id":"edge-fe-ts","fromNode":"domain-frontend","fromSide":"bottom","toNode":"fe-ts","toSide":"top"},

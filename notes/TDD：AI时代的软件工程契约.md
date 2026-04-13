@@ -14,7 +14,7 @@ status: seed
 belongs_to_canvas:
   - "[[软件工程.canvas]]"
 ---
-
+对抗的方式，为我选择比较优秀的方案
 # TDD：AI时代的软件工程契约
 
 > [!abstract] 一句话摘要

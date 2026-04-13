@@ -1,89 +1,136 @@
 {
-	"nodes":[
-		{
-			"id":"8e0ef89636be70fe",
-			"type":"text",
-			"text":"git pull",
-			"styleAttributes":{},
-			"x":140,
-			"y":-460,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"20d5808cc9d001e6",
-			"type":"text",
-			"text":"fetch",
-			"styleAttributes":{},
-			"x":360,
-			"y":-580,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"337f6d8da7bab287",
-			"type":"text",
-			"text":"merge",
-			"styleAttributes":{},
-			"x":490,
-			"y":-430,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"814e4b870abf8b92",
-			"type":"text",
-			"text":"checkout",
-			"styleAttributes":{},
-			"x":420,
-			"y":-320,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"7a1cb21b65427539",
-			"type":"text",
-			"text":"rebase",
-			"styleAttributes":{},
-			"x":-140,
-			"y":-560,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"c6475d0c3cb67bca",
-			"type":"text",
-			"text":"amend机制",
-			"styleAttributes":{},
-			"x":-160,
-			"y":-380,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"35c4d7a44edd12e9",
-			"type":"text",
-			"text":"[[Git移除已跟踪文件与多设备Pull同步问题]]",
-			"styleAttributes":{},
-			"x":-120,
-			"y":-200,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"baa0ff94161892a6",
-			"type":"text",
-			"text":"git remove --cache",
-			"styleAttributes":{},
-			"x":240,
-			"y":-180,
-			"width":260,
-			"height":60
-		}
-	],
-	"edges":[],
-	"metadata":{
-		"version":"1.0-1.0",
-		"frontmatter":{}
-	}
+  "nodes": [
+    {
+      "id": "8e0ef89636be70fe",
+      "type": "text",
+      "text": "git pull",
+      "styleAttributes": {},
+      "x": 140,
+      "y": -460,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "20d5808cc9d001e6",
+      "type": "text",
+      "text": "fetch",
+      "styleAttributes": {},
+      "x": 360,
+      "y": -580,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "337f6d8da7bab287",
+      "type": "text",
+      "text": "merge",
+      "styleAttributes": {},
+      "x": 490,
+      "y": -430,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "814e4b870abf8b92",
+      "type": "text",
+      "text": "checkout",
+      "styleAttributes": {},
+      "x": 420,
+      "y": -320,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "7a1cb21b65427539",
+      "type": "text",
+      "text": "rebase",
+      "styleAttributes": {},
+      "x": -140,
+      "y": -560,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "c6475d0c3cb67bca",
+      "type": "text",
+      "text": "amend机制",
+      "styleAttributes": {},
+      "x": -160,
+      "y": -380,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "35c4d7a44edd12e9",
+      "type": "text",
+      "text": "[[Git移除已跟踪文件与多设备Pull同步问题]]",
+      "styleAttributes": {},
+      "x": -120,
+      "y": -200,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "baa0ff94161892a6",
+      "type": "text",
+      "text": "git remove --cache",
+      "styleAttributes": {},
+      "x": 240,
+      "y": -180,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "git-stash-note",
+      "type": "text",
+      "text": "[[Git Stash：零基础入门]]",
+      "styleAttributes": {},
+      "x": 120,
+      "y": 20,
+      "width": 280,
+      "height": 80
+    },
+    {
+      "id": "git-stash-canvas",
+      "type": "text",
+      "text": "[[Git Stash.canvas]]\nstash 专题图谱",
+      "styleAttributes": {},
+      "x": 460,
+      "y": 20,
+      "width": 260,
+      "height": 100
+    },
+    {
+      "id": "git-stash-meaning",
+      "type": "text",
+      "text": "stash\n临时收起未提交修改\n不是正式提交历史",
+      "styleAttributes": {},
+      "x": 140,
+      "y": 160,
+      "width": 280,
+      "height": 120
+    },
+    {
+      "id": "git-stash-compare",
+      "type": "text",
+      "text": "与 branch / worktree 的关系\nstash = 临时收纳\nbranch = 历史边界\nworktree = 并行工作区隔离",
+      "styleAttributes": {},
+      "x": 500,
+      "y": 180,
+      "width": 320,
+      "height": 140
+    }
+  ],
+  "edges": [
+    {"id": "edge-git-stash-note-canvas", "fromNode": "git-stash-note", "fromSide": "right", "toNode": "git-stash-canvas", "toSide": "left"},
+    {"id": "edge-git-stash-note-meaning", "fromNode": "git-stash-note", "fromSide": "bottom", "toNode": "git-stash-meaning", "toSide": "top"},
+    {"id": "edge-git-stash-meaning-compare", "fromNode": "git-stash-meaning", "fromSide": "right", "toNode": "git-stash-compare", "toSide": "left"},
+    {"id": "edge-git-stash-note-checkout", "fromNode": "git-stash-note", "fromSide": "top", "toNode": "814e4b870abf8b92", "toSide": "bottom"},
+    {"id": "edge-git-stash-note-pull", "fromNode": "git-stash-note", "fromSide": "top", "toNode": "8e0ef89636be70fe", "toSide": "bottom"},
+    {"id": "edge-git-rm-related", "fromNode": "git-stash-note", "fromSide": "left", "toNode": "35c4d7a44edd12e9", "toSide": "right"}
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
 }
