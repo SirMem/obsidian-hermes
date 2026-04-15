@@ -1,0 +1,230 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "MySQL 语句 + 原理整合主线\n定位：实习 / 面试 / 项目表达版\n目标：把‘会写 SQL’和‘能解释为什么这样写、为什么会快慢/并发/一致性问题’接成一张图\n当前判断：结合现有语句笔记 01~10 与学习笔记 01~08、10~16，已经可以覆盖实习面试里较高比例的 MySQL 高频内容",
+      "x": 0,
+      "y": 0,
+      "width": 620,
+      "height": 220
+    },
+    {
+      "id": "coverage",
+      "type": "text",
+      "text": "当前覆盖判断\n- 语句层：已形成从 CRUD、where、order by、limit、group by、join 到多表列表/统计接口的完整入门主线\n- 原理层：已形成系统角色、事务、并发问题、隔离级别、MVCC、索引、explain、锁、日志主线\n- 对实习 / 初中级后端面试来说，主体高频范围基本可覆盖约 80% 或更高\n- 后续可继续补：group by 易错点、日志提交细节、更完整 SQL 优化套路",
+      "x": 700,
+      "y": 0,
+      "width": 470,
+      "height": 240
+    },
+    {
+      "id": "doublelink",
+      "type": "text",
+      "text": "双链使用说明\n- 这个 canvas 里的节点都尽量放了 [[双链]]\n- 在 Obsidian 里点节点文本中的笔记名，就能直接跳回原始 markdown\n- 这张图更像‘总导航图’：先在 canvas 看主线，再回原笔记复习细节",
+      "x": 1230,
+      "y": 0,
+      "width": 420,
+      "height": 210
+    },
+    {
+      "id": "sql-summary",
+      "type": "text",
+      "text": "语句线：你现在已经从‘会写零散语法’走到‘能拼业务 SQL’\n关键词：CRUD -> 条件筛选 -> 排序 -> 分页 -> 统计 -> 关系连接 -> 多表接口\n面试价值：能写出像列表页、统计页、排行榜接口那样的 SQL 骨架",
+      "x": -520,
+      "y": -330,
+      "width": 460,
+      "height": 210
+    },
+    {
+      "id": "sql-01-03",
+      "type": "text",
+      "text": "语句起步：先分动作，再练 CRUD\n[[MySQL 语句学习 01：先别急着背语法，先搞懂你在和表做哪几类动作]]\n[[MySQL 语句学习 02：select 为什么是最核心的语句——先学会 where、order by、limit]]\n[[MySQL 语句学习 03：insert、update、delete 怎么学才不会一写就慌]]\n- 先把‘查 / 改数据 / 改表 / 管事务’分开\n- 建立最小表直觉\n- CRUD 是后面一切查询与项目表达的地基",
+      "x": -1480,
+      "y": -620,
+      "width": 470,
+      "height": 280
+    },
+    {
+      "id": "sql-04-06",
+      "type": "text",
+      "text": "单表列表主线：条件、排序、分页\n[[MySQL 语句学习 04：where 条件怎么写，才能真正把“找哪批数据”这件事学明白]]\n[[MySQL 语句学习 05：select + where + order by + limit，怎么拼成一条真正像业务查询的 SQL]]\n[[MySQL 语句学习 06：limit 为什么不只是“取几条”，而是分页思维的入口]]\n- where = 圈定业务范围\n- order by = 决定展示顺序\n- limit = 列表接口分页入口",
+      "x": -970,
+      "y": -620,
+      "width": 470,
+      "height": 290
+    },
+    {
+      "id": "sql-07",
+      "type": "text",
+      "text": "统计与连接总起\n[[MySQL 语句学习 07：count、sum、group by、join——先建立“列表、统计、关系连接”这三种查询思维]]\n- 把查询能力分成：查明细、做统计、连关系\n- 这是从单表 SQL 走向业务 SQL 的分水岭",
+      "x": -460,
+      "y": -620,
+      "width": 430,
+      "height": 220
+    },
+    {
+      "id": "sql-08",
+      "type": "text",
+      "text": "join 关系主线\n[[MySQL 语句学习 08：join 到底在连什么——从一对多、多对多和中间表开始建立关系查询思维]]\n[[MySQL 语句学习 08 补充：外键到底是什么，两个 join 又是在接哪两层关系]]\n[[MySQL 语句学习 08-2：把外键、关系表、两个 join 画成“找人路线图”——用最小数据一步一步走明白]]\n- 外键像路标\n- 中间表像中转站\n- 两个 join 常常是在走两段关系路",
+      "x": 20,
+      "y": -620,
+      "width": 500,
+      "height": 290
+    },
+    {
+      "id": "sql-09-10",
+      "type": "text",
+      "text": "多表接口主线\n[[MySQL 语句学习 09：多表查询怎么和 where、group by、order by 一起配合——让 SQL 更像真实业务接口]]\n[[MySQL 语句学习 10：多表列表查询和多表统计查询，分别在“查什么”——别把明细接口和统计接口混在一起]]\n- join 是地基，不是结尾\n- 多表列表接口：查一条条明细\n- 多表统计接口：查一批记录汇总后的结果\n- 你已经开始进入‘接口思维’",
+      "x": 560,
+      "y": -620,
+      "width": 500,
+      "height": 290
+    },
+    {
+      "id": "theory-summary",
+      "type": "text",
+      "text": "原理线：你现在已经不只是会写 SQL，而是能把 SQL 放回数据库系统里理解\n关键词：系统角色 -> 事务 -> 并发问题 -> 隔离级别 -> MVCC -> 索引 -> explain -> 锁 -> 日志\n面试价值：能解释为什么要事务、为什么有并发问题、为什么会慢、为什么能恢复",
+      "x": -520,
+      "y": 340,
+      "width": 500,
+      "height": 230
+    },
+    {
+      "id": "theory-01",
+      "type": "text",
+      "text": "系统角色总起\n[[MySQL 学习笔记 01：先重建知识骨架——MySQL 在系统里到底负责什么]]\n[[MySQL 学习目标（第一阶段）]]\n- MySQL 是核心业务事实存储中心\n- 与 Redis / MQ 的分工要能说清\n- 所有语句学习与原理学习，都挂在‘系统里到底负责什么’这根主线上",
+      "x": -1500,
+      "y": 260,
+      "width": 470,
+      "height": 250
+    },
+    {
+      "id": "theory-02-04",
+      "type": "text",
+      "text": "事务与并发问题主线\n[[MySQL 学习笔记 02：为什么事务会出现]]\n[[MySQL 学习笔记 03：先别背隔离级别，先搞清楚并发到底会制造哪些问题]]\n[[MySQL 学习笔记 04：隔离级别不是让你背表格，而是数据库在正确性和性能之间做取舍]]\n- 事务给业务动作加整体边界\n- 并发问题：脏读 / 不可重复读 / 幻读 / 丢失更新\n- 隔离级别本质是正确性与性能取舍",
+      "x": -990,
+      "y": 260,
+      "width": 480,
+      "height": 290
+    },
+    {
+      "id": "theory-05-08",
+      "type": "text",
+      "text": "MVCC 主线\n[[MySQL 学习笔记 05：不要急着钻 MVCC，先搞清楚“你读到的到底是哪一版数据”]]\n[[MySQL 学习笔记 06：MVCC 不等于魔法，先搞清楚快照读、当前读、Read View 分别在干什么]]\n[[MySQL 学习笔记 07：别一上来背版本链，先搞清楚 undo log 为什么能让旧版本“找得回来”]]\n[[MySQL 学习笔记 08：Read View 到底怎么判断可见性——别死背规则，先搞懂“谁对谁可见”]]\n- MVCC 更像多版本读取机制，让读少排队\n- undo / Read View 是关键配角",
+      "x": -450,
+      "y": 260,
+      "width": 500,
+      "height": 310
+    },
+    {
+      "id": "theory-10-11",
+      "type": "text",
+      "text": "索引与 explain 主线\n[[MySQL 学习笔记 10：索引不是“背概念”，先搞懂它到底在帮你减少什么]]\n[[MySQL 学习笔记 11：别把 explain 当黑盒，先学会看 key、type、rows 到底在告诉你什么]]\n- 索引本质：减少扫描范围与 IO\n- explain 是看查询路径与代价的大致窗口\n- 这是语句层与性能分析真正接起来的地方",
+      "x": 120,
+      "y": 260,
+      "width": 470,
+      "height": 260
+    },
+    {
+      "id": "theory-12-14",
+      "type": "text",
+      "text": "锁主线\n[[MySQL 学习笔记 12：锁不是为了“卡别人”，先搞懂数据库为什么必须让某些操作排队]]\n[[MySQL 学习笔记 13：共享锁、排他锁、行锁、表锁，别背名词，先搞懂它们在保护什么]]\n[[MySQL 学习笔记 14：为什么 InnoDB 的行锁经常和索引命中绑在一起]]\n[[MySQL 过渡小课：为什么普通 select 不加锁，但 update、delete、select for update 却会加锁]]\n- 锁控制关键访问点顺序\n- 锁与索引命中、当前读、性能强相关",
+      "x": 650,
+      "y": 260,
+      "width": 500,
+      "height": 300
+    },
+    {
+      "id": "theory-16",
+      "type": "text",
+      "text": "日志主线\n[[MySQL 学习笔记 16：别把日志看成零散名词——先搞懂 redo、undo、binlog 分别在保护什么]]\n- redo：保护已提交修改尽量别丢\n- undo：支持回滚、旧版本回溯\n- binlog：服务复制 / 恢复 / 追踪\n- 主线：持久化、恢复、复制三件事串起来看",
+      "x": 1220,
+      "y": 260,
+      "width": 430,
+      "height": 250
+    },
+    {
+      "id": "gap-note",
+      "type": "text",
+      "text": "现有材料说明\n- 学习笔记当前已有：01~08、10~16\n- 09、15 当前暂无独立文件，整合时不假装它们已经存在\n- 语句学习当前已有：01~10\n- 因此这张 canvas 按‘现有真实材料’组织，而不是按假定的完整目录组织",
+      "x": 1710,
+      "y": 260,
+      "width": 430,
+      "height": 240
+    },
+    {
+      "id": "bridge",
+      "type": "text",
+      "text": "语句线 × 原理线，怎么在面试里接起来\n1. 先从业务 SQL 出发：查列表 / 做统计 / join 多表\n2. 再补性能视角：有没有索引、扫描范围大不大、explain 怎么看\n3. 再补正确性视角：为什么要事务、并发时会出什么问题\n4. 再补并发控制：MVCC 让哪些读少排队，锁在哪些关键点控制顺序\n5. 最后补可靠性：提交后为什么尽量不丢、崩溃后怎么恢复\n\n这就是‘会写 SQL’升级成‘能解释系统现象’的路径。",
+      "x": -260,
+      "y": 720,
+      "width": 650,
+      "height": 300
+    },
+    {
+      "id": "interview",
+      "type": "text",
+      "text": "当前可形成的 MySQL 面试表达骨架\n1. MySQL 在系统里负责什么，与 Redis / MQ 怎么分工\n2. 常见 SQL 动作有哪些，项目里怎么写列表 / 分页 / 统计 / 多表查询\n3. where、order by、limit 怎么拼成真实列表接口\n4. group by、join、多表 where / order by 怎么拼成统计或排行接口\n5. 为什么需要事务，并发下会出现哪些异常\n6. MVCC 和锁分别在缓解/控制什么冲突\n7. 索引为什么能减少扫描范围，explain 怎么粗看 SQL 路径\n8. redo / undo / binlog 分别在保护什么\n\n这套骨架已经足以支撑大部分实习面试的一轮基础追问。",
+      "x": 470,
+      "y": 720,
+      "width": 600,
+      "height": 340
+    },
+    {
+      "id": "next-step",
+      "type": "text",
+      "text": "后续最自然的补强方向\n- SQL 线继续补：[[MySQL 语句学习 11：同样是 group by，为什么有时是在按业务维度分组，有时却把结果越写越乱]]（当前尚未创建）\n- 原理线继续补：redo / WAL / 提交流程 / 崩溃恢复更细表达\n- 语句与性能结合：典型慢 SQL 怎么从写法、索引、explain 三层一起分析\n\n如果只看当前实习面试目标，你已经处在‘可以开始反复口述、压缩表达’的阶段。",
+      "x": 1140,
+      "y": 720,
+      "width": 520,
+      "height": 290
+    },
+    {
+      "id": "existing-canvas",
+      "type": "text",
+      "text": "已有相关总览\n[[MySQL 第一阶段学习主线总结（实习 / 面试 / 项目表达版）]]\n- 那张 canvas 偏‘原理主线总览’\n- 这张新 canvas 偏‘语句 + 原理整合总览’\n- 两张图可以配合使用：一张偏知识骨架，一张偏接口与面试表达融合",
+      "x": 1710,
+      "y": 720,
+      "width": 430,
+      "height": 240
+    }
+  ],
+  "edges": [
+    {"id": "e1", "type": "line", "fromNode": "root", "fromSide": "right", "toNode": "coverage", "toSide": "left"},
+    {"id": "e2", "type": "line", "fromNode": "coverage", "fromSide": "right", "toNode": "doublelink", "toSide": "left"},
+    {"id": "e3", "type": "line", "fromNode": "root", "fromSide": "left", "toNode": "sql-summary", "toSide": "right"},
+    {"id": "e4", "type": "line", "fromNode": "root", "fromSide": "bottom", "toNode": "theory-summary", "toSide": "top"},
+    {"id": "e5", "type": "line", "fromNode": "sql-summary", "fromSide": "left", "toNode": "sql-01-03", "toSide": "right"},
+    {"id": "e6", "type": "line", "fromNode": "sql-summary", "fromSide": "bottom", "toNode": "sql-04-06", "toSide": "top"},
+    {"id": "e7", "type": "line", "fromNode": "sql-summary", "fromSide": "bottom", "toNode": "sql-07", "toSide": "top"},
+    {"id": "e8", "type": "line", "fromNode": "sql-summary", "fromSide": "bottom", "toNode": "sql-08", "toSide": "top"},
+    {"id": "e9", "type": "line", "fromNode": "sql-summary", "fromSide": "right", "toNode": "sql-09-10", "toSide": "left"},
+    {"id": "e10", "type": "line", "fromNode": "sql-01-03", "fromSide": "right", "toNode": "sql-04-06", "toSide": "left"},
+    {"id": "e11", "type": "line", "fromNode": "sql-04-06", "fromSide": "right", "toNode": "sql-07", "toSide": "left"},
+    {"id": "e12", "type": "line", "fromNode": "sql-07", "fromSide": "right", "toNode": "sql-08", "toSide": "left"},
+    {"id": "e13", "type": "line", "fromNode": "sql-08", "fromSide": "right", "toNode": "sql-09-10", "toSide": "left"},
+    {"id": "e14", "type": "line", "fromNode": "theory-summary", "fromSide": "left", "toNode": "theory-01", "toSide": "right"},
+    {"id": "e15", "type": "line", "fromNode": "theory-summary", "fromSide": "left", "toNode": "theory-02-04", "toSide": "right"},
+    {"id": "e16", "type": "line", "fromNode": "theory-summary", "fromSide": "top", "toNode": "theory-05-08", "toSide": "bottom"},
+    {"id": "e17", "type": "line", "fromNode": "theory-summary", "fromSide": "right", "toNode": "theory-10-11", "toSide": "left"},
+    {"id": "e18", "type": "line", "fromNode": "theory-summary", "fromSide": "right", "toNode": "theory-12-14", "toSide": "left"},
+    {"id": "e19", "type": "line", "fromNode": "theory-summary", "fromSide": "right", "toNode": "theory-16", "toSide": "left"},
+    {"id": "e20", "type": "line", "fromNode": "theory-16", "fromSide": "right", "toNode": "gap-note", "toSide": "left"},
+    {"id": "e21", "type": "line", "fromNode": "sql-summary", "fromSide": "bottom", "toNode": "bridge", "toSide": "top"},
+    {"id": "e22", "type": "line", "fromNode": "theory-summary", "fromSide": "bottom", "toNode": "bridge", "toSide": "top"},
+    {"id": "e23", "type": "line", "fromNode": "bridge", "fromSide": "right", "toNode": "interview", "toSide": "left"},
+    {"id": "e24", "type": "line", "fromNode": "interview", "fromSide": "right", "toNode": "next-step", "toSide": "left"},
+    {"id": "e25", "type": "line", "fromNode": "next-step", "fromSide": "right", "toNode": "existing-canvas", "toSide": "left"},
+    {"id": "e26", "type": "line", "fromNode": "coverage", "fromSide": "bottom", "toNode": "interview", "toSide": "top"},
+    {"id": "e27", "type": "line", "fromNode": "doublelink", "fromSide": "bottom", "toNode": "existing-canvas", "toSide": "top"},
+    {"id": "e28", "type": "line", "fromNode": "theory-01", "fromSide": "right", "toNode": "theory-02-04", "toSide": "left"},
+    {"id": "e29", "type": "line", "fromNode": "theory-02-04", "fromSide": "right", "toNode": "theory-05-08", "toSide": "left"},
+    {"id": "e30", "type": "line", "fromNode": "theory-05-08", "fromSide": "right", "toNode": "theory-10-11", "toSide": "left"},
+    {"id": "e31", "type": "line", "fromNode": "theory-10-11", "fromSide": "right", "toNode": "theory-12-14", "toSide": "left"},
+    {"id": "e32", "type": "line", "fromNode": "theory-12-14", "fromSide": "right", "toNode": "theory-16", "toSide": "left"}
+  ],
+  "metadata": {
+    "version": "1.0-1.0"
+  }
+}
